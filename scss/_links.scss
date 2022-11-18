@@ -1,0 +1,27 @@
+@use "variables";
+
+.social-links {
+    display: flex;
+    margin: 0 auto;
+    & > a {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0d6efd;
+        color: #fff;
+        line-height: 1;
+        margin: 0 auto;
+        margin-right: 0.75rem;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+
+        &:hover {
+            background: variables.$secondary;
+        }
+    }
+
+
+}

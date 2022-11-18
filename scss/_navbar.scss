@@ -1,0 +1,25 @@
+@use "variables";
+
+.navbar {
+    z-index: 1000;
+    li {
+        padding: 0 1rem;
+        a {
+            color: variables.$black;
+            text-transform: capitalize;
+
+            &:hover {
+                color: variables.$blue; 
+
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width: variables.$lg-bp) {
+    .navbar-collapse {
+        background-color: aqua;
+    }
+}

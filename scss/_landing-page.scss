@@ -1,0 +1,35 @@
+@use "variables";
+
+
+.landing-page {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  .landing-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  path {
+    fill: none;
+    stroke: black;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+}
+
+@media (max-width: variables.$lg-bp) {
+  .animal-animation {
+    display: flex;
+    justify-content: center;    
+    margin-bottom: 10rem !important;
+  }
+  .landing-header {
+    margin-top: 5rem !important;
+  }
+}

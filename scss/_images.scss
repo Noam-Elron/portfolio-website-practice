@@ -1,0 +1,17 @@
+@use "variables";
+
+.logo {
+    width: 11rem;
+    height: auto;
+    margin-top: 0.2rem;
+    padding-left: 0.5rem;
+    
+}
+
+@media (min-width: variables.$lg-bp) {
+    .logo {
+        margin-top: -0.1rem;
+    }
+}
+
+
