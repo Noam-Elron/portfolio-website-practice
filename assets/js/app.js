@@ -102,6 +102,7 @@ var paths = [
     timeline
     .add({
       targets: path.id,
+      endDelay: 1000,
       d: {
         value: path.d,
         duration: 1000,
@@ -109,7 +110,8 @@ var paths = [
       },
     }, 1000 + 10 * index);
   });
-  
+
+  /* Basically just a glorified end-delay   
   timeline
     .add({
       targets: 'path:first-child',
@@ -118,4 +120,5 @@ var paths = [
         duration: 1000,
         easing: 'easeInOutQuad'
       },
-    }, 2000 + 10 * paths.length);
+    }, 2000 + 10 * paths.length); 
+    */
